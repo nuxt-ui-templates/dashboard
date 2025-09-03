@@ -63,12 +63,12 @@ const links = [[{
 }], [{
   label: 'Feedback',
   icon: 'i-lucide-message-circle',
-  to: 'https://github.com/nuxt-ui-pro/dashboard',
+  to: 'https://github.com/nuxt-ui-templates/dashboard',
   target: '_blank'
 }, {
   label: 'Help & Support',
   icon: 'i-lucide-info',
-  to: 'https://github.com/nuxt/ui',
+  to: 'https://github.com/nuxt-ui-templates/dashboard',
   target: '_blank'
 }]] satisfies NavigationMenuItem[][]
 
@@ -83,7 +83,7 @@ const groups = computed(() => [{
     id: 'source',
     label: 'View page source',
     icon: 'i-simple-icons-github',
-    to: `https://github.com/nuxt-ui-pro/dashboard/blob/main/app/pages${route.path === '/' ? '/index' : route.path}.vue`,
+    to: `https://github.com/nuxt-ui-templates/dashboard/blob/main/app/pages${route.path === '/' ? '/index' : route.path}.vue`,
     target: '_blank'
   }]
 }])
