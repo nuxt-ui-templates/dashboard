@@ -5,7 +5,7 @@
 Get started with the Nuxt dashboard template with multiple pages, collapsible sidebar, keyboard shortcuts, light & dark more, command palette and more, powered by [Nuxt UI](https://ui.nuxt.com).
 
 - [Live demo](https://dashboard-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation)
+- [Documentation](https://ui4.nuxt.com/docs/getting-started/installation/nuxt)
 
 <a href="https://dashboard-template.nuxt.dev/" target="_blank">
   <picture>
