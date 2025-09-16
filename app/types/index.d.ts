@@ -25,7 +25,7 @@ export interface Member {
   name: string
   username: string
   role: 'member' | 'owner'
-  avatar: Avatar
+  avatar: AvatarProps
 }
 
 export interface Stat {
