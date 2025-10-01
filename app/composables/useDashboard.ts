@@ -6,12 +6,11 @@ const _useDashboard = () => {
   const isNotificationsSlideoverOpen = ref(false)
 
   defineShortcuts({
-    'g-h': () => router.push('/'),
-    'g-i': () => router.push('/inbox'),
-    'g-c': () => router.push('/customers'),
-    'g-s': () => router.push('/settings'),
-    'n': () => isNotificationsSlideoverOpen.value = !isNotificationsSlideoverOpen.value
-  })
+  'n-i': () => router.push('/countries/india'),
+  'n-b': () => router.push('/countries/bangladesh'),
+  'n-c': () => router.push('/countries/china'),
+  //'n': () => isNotificationsSlideoverOpen.value = !isNotificationsSlideoverOpen.value
+})
 
   watch(() => route.fullPath, () => {
     isNotificationsSlideoverOpen.value = false
