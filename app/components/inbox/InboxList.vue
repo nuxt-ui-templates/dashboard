@@ -22,7 +22,9 @@ watch(selectedMail, () => {
 
 defineShortcuts({
   arrowdown: () => {
-    const index = props.mails.findIndex(mail => mail.id === selectedMail.value?.id)
+    const index = props.mails.findIndex(
+      mail => mail.id === selectedMail.value?.id
+    )
 
     if (index === -1) {
       selectedMail.value = props.mails[0]
@@ -31,7 +33,9 @@ defineShortcuts({
     }
   },
   arrowup: () => {
-    const index = props.mails.findIndex(mail => mail.id === selectedMail.value?.id)
+    const index = props.mails.findIndex(
+      mail => mail.id === selectedMail.value?.id
+    )
 
     if (index === -1) {
       selectedMail.value = props.mails[props.mails.length - 1]
@@ -52,19 +56,28 @@ defineShortcuts({
       <div
         class="p-4 sm:px-6 text-sm cursor-pointer border-l-2 transition-colors"
         :class="[
-          mail.unread ? 'text-highlighted' : 'text-toned)',
-          selectedMail && selectedMail.id === mail.id ? 'border-primary bg-primary/10' : 'border-(--ui-bg) hover:border-primary hover:bg-primary/5'
+          mail.unread ? 'text-highlighted' : 'text-toned',
+          selectedMail && selectedMail.id === mail.id
+            ? 'border-primary bg-primary/10'
+            : 'border-(--ui-bg) hover:border-primary hover:bg-primary/5'
         ]"
         @click="selectedMail = mail"
       >
-        <div class="flex items-center justify-between" :class="[mail.unread && 'font-semibold']">
+        <div
+          class="flex items-center justify-between"
+          :class="[mail.unread && 'font-semibold']"
+        >
           <div class="flex items-center gap-3">
             {{ mail.from.name }}
 
             <UChip v-if="mail.unread" />
           </div>
 
-          <span>{{ isToday(new Date(mail.date)) ? format(new Date(mail.date), 'HH:mm') : format(new Date(mail.date), 'dd MMM') }}</span>
+          <span>{{
+            isToday(new Date(mail.date))
+              ? format(new Date(mail.date), "HH:mm")
+              : format(new Date(mail.date), "dd MMM")
+          }}</span>
         </div>
         <p class="truncate" :class="[mail.unread && 'font-semibold']">
           {{ mail.subject }}
