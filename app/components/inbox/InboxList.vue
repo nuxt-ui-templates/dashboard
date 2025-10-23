@@ -22,9 +22,7 @@ watch(selectedMail, () => {
 
 defineShortcuts({
   arrowdown: () => {
-    const index = props.mails.findIndex(
-      mail => mail.id === selectedMail.value?.id
-    )
+    const index = props.mails.findIndex(mail => mail.id === selectedMail.value?.id)
 
     if (index === -1) {
       selectedMail.value = props.mails[0]
@@ -33,9 +31,7 @@ defineShortcuts({
     }
   },
   arrowup: () => {
-    const index = props.mails.findIndex(
-      mail => mail.id === selectedMail.value?.id
-    )
+    const index = props.mails.findIndex(mail => mail.id === selectedMail.value?.id)
 
     if (index === -1) {
       selectedMail.value = props.mails[props.mails.length - 1]
@@ -63,21 +59,14 @@ defineShortcuts({
         ]"
         @click="selectedMail = mail"
       >
-        <div
-          class="flex items-center justify-between"
-          :class="[mail.unread && 'font-semibold']"
-        >
+        <div class="flex items-center justify-between" :class="[mail.unread && 'font-semibold']">
           <div class="flex items-center gap-3">
             {{ mail.from.name }}
 
             <UChip v-if="mail.unread" />
           </div>
 
-          <span>{{
-            isToday(new Date(mail.date))
-              ? format(new Date(mail.date), "HH:mm")
-              : format(new Date(mail.date), "dd MMM")
-          }}</span>
+          <span>{{ isToday(new Date(mail.date)) ? format(new Date(mail.date), "HH:mm") : format(new Date(mail.date), "dd MMM") }}</span>
         </div>
         <p class="truncate" :class="[mail.unread && 'font-semibold']">
           {{ mail.subject }}
