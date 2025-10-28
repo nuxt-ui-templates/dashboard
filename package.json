@@ -16,7 +16,7 @@
     "@nuxt/ui": "^4.1.0",
     "@unovis/ts": "^1.6.1",
     "@unovis/vue": "^1.6.1",
-    "@vueuse/nuxt": "^13.9.0",
+    "@vueuse/nuxt": "^14.0.0",
     "date-fns": "^4.1.0",
     "nuxt": "^4.2.0",
     "zod": "^4.1.12"
