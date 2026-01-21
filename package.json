@@ -18,6 +18,7 @@
     "@tanstack/table-core": "^8.21.3",
     "@unovis/ts": "^1.6.2",
     "@unovis/vue": "^1.6.2",
+    "@vueuse/core": "^14.1.0",
     "@vueuse/nuxt": "^14.1.0",
     "date-fns": "^4.1.0",
     "nuxt": "^4.2.2",
