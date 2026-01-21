@@ -22,7 +22,7 @@ watch(selectedMail, () => {
 
 defineShortcuts({
   arrowdown: () => {
-    const index = props.mails.findIndex(mail => mail.id === selectedMail.value?.id)
+    const index = props.mails.findIndex((mail: Mail) => mail.id === selectedMail.value?.id)
 
     if (index === -1) {
       selectedMail.value = props.mails[0]
@@ -31,7 +31,7 @@ defineShortcuts({
     }
   },
   arrowup: () => {
-    const index = props.mails.findIndex(mail => mail.id === selectedMail.value?.id)
+    const index = props.mails.findIndex((mail: Mail) => mail.id === selectedMail.value?.id)
 
     if (index === -1) {
       selectedMail.value = props.mails[props.mails.length - 1]
@@ -47,7 +47,7 @@ defineShortcuts({
     <div
       v-for="(mail, index) in mails"
       :key="index"
-      :ref="el => { mailsRefs[mail.id] = el as Element }"
+      :ref="(el: Element) => { mailsRefs[mail.id] = el }"
     >
       <div
         class="p-4 sm:px-6 text-sm cursor-pointer border-l-2 transition-colors"
@@ -55,7 +55,7 @@ defineShortcuts({
           mail.unread ? 'text-highlighted' : 'text-toned',
           selectedMail && selectedMail.id === mail.id
             ? 'border-primary bg-primary/10'
-            : 'border-(--ui-bg) hover:border-primary hover:bg-primary/5'
+            : 'border-bg hover:border-primary hover:bg-primary/5'
         ]"
         @click="selectedMail = mail"
       >
