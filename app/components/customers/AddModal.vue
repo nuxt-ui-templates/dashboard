@@ -11,8 +11,8 @@ const open = ref(false)
 type Schema = z.output<typeof schema>
 
 const state = reactive<Partial<Schema>>({
-  name: undefined,
-  email: undefined
+  name: '',
+  email: ''
 })
 
 const toast = useToast()
