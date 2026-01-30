@@ -17,6 +17,11 @@ export default defineNuxtConfig({
       cors: true
     }
   },
+  vite: {
+    server: {
+      allowedHosts: true
+    }
+  },
 
   compatibilityDate: '2024-07-11',
 
