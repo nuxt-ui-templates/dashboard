@@ -6,7 +6,7 @@ const props = defineProps<{
   mails: Mail[]
 }>()
 
-const mailsRefs = ref<Element[]>([])
+const mailsRefs = ref<Record<number, Element | null>>({})
 
 const selectedMail = defineModel<Mail | null>()
 
@@ -47,7 +47,7 @@ defineShortcuts({
     <div
       v-for="(mail, index) in mails"
       :key="index"
-      :ref="(el: Element) => { mailsRefs[mail.id] = el }"
+      :ref="(el) => { mailsRefs[mail.id] = el as Element | null }"
     >
       <div
         class="p-4 sm:px-6 text-sm cursor-pointer border-l-2 transition-colors"
