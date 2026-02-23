@@ -14,6 +14,7 @@
     "@iconify-json/lucide": "^1.2.90",
     "@iconify-json/simple-icons": "^1.2.70",
     "@internationalized/date": "^3.11.0",
+    "@nuxt/hints": "1.0.0-alpha.6",
     "@nuxt/ui": "^4.4.0",
     "@tanstack/table-core": "^8.21.3",
     "@unovis/ts": "^1.6.4",
@@ -22,7 +23,6 @@
     "@vueuse/nuxt": "^14.2.1",
     "date-fns": "^4.1.0",
     "nuxt": "^4.3.1",
-    "reka-ui": "https://pkg.pr.new/reka-ui@e694c06",
     "scule": "^1.3.0",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.28",
@@ -33,6 +33,9 @@
     "eslint": "^10.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.4"
+  },
+  "resolutions": {
+    "reka-ui": "https://pkg.pr.new/reka-ui@b126e92"
   },
   "packageManager": "pnpm@10.29.3"
 }
