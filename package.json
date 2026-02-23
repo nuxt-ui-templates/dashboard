@@ -35,7 +35,7 @@
     "vue-tsc": "^3.2.4"
   },
   "resolutions": {
-    "reka-ui": "https://pkg.pr.new/reka-ui@b126e92"
+    "reka-ui": "https://pkg.pr.new/reka-ui@1ffceb2"
   },
   "packageManager": "pnpm@10.29.3"
 }
