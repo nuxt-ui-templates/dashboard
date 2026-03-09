@@ -11,9 +11,9 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.95",
+    "@iconify-json/lucide": "^1.2.96",
     "@iconify-json/simple-icons": "^1.2.72",
-    "@internationalized/date": "^3.11.0",
+    "@internationalized/date": "^3.12.0",
     "@nuxt/ui": "^4.5.1",
     "@tanstack/table-core": "^8.21.3",
     "@unovis/ts": "^1.6.4",
@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
-    "eslint": "^10.0.2",
+    "eslint": "^10.0.3",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.5"
   },
-  "packageManager": "pnpm@10.30.3"
+  "packageManager": "pnpm@10.31.0"
 }
