@@ -20,7 +20,7 @@ Get started with the Nuxt dashboard template with multiple pages, collapsible si
 ## Quick Start
 
 ```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/dashboard
+npm create nuxt@latest -- -t ui/dashboard
 ```
 
 ## Deploy your own
