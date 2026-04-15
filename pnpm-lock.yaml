@@ -15,8 +15,8 @@ importers:
         specifier: ^1.2.78
         version: 1.2.78
       '@internationalized/date':
-        specifier: ^3.12.0
-        version: 3.12.0
+        specifier: ^3.12.1
+        version: 3.12.1
       '@nuxt/ui':
         specifier: ^4.6.1
         version: 4.6.1(@tiptap/extensions@3.21.0(@tiptap/core@3.21.0(@tiptap/pm@3.21.0))(@tiptap/pm@3.21.0))(@tiptap/y-tiptap@3.0.2(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.7)(y-protocols@1.0.7(yjs@13.6.30))(yjs@13.6.30))(change-case@5.4.4)(db0@0.3.4)(embla-carousel@8.6.0)(ioredis@5.10.1)(magicast@0.5.2)(tailwindcss@4.2.2)(typescript@6.0.2)(vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1)(yaml@2.8.3))(vue-router@5.0.4(@vue/compiler-sfc@3.5.32)(vue@3.5.32(typescript@6.0.2)))(vue@3.5.32(typescript@6.0.2))(yjs@13.6.30)(zod@4.3.6)
@@ -543,8 +543,8 @@ packages:
     peerDependencies:
       vue: '>=3'
 
-  '@internationalized/date@3.12.0':
-    resolution: {integrity: sha512-/PyIMzK29jtXaGU23qTvNZxvBXRtKbNnGDFD+PY6CZw/Y8Ex8pFUzkuCJCG9aOqmShjqhS9mPqP6Dk5onQY8rQ==}
+  '@internationalized/date@3.12.1':
+    resolution: {integrity: sha512-6IedsVWXyq4P9Tj+TxuU8WGWM70hYLl12nbYU8jkikVpa6WXapFazPUcHUMDMoWftIDE2ILDkFFte6W2nFCkRQ==}
 
   '@internationalized/number@3.6.5':
     resolution: {integrity: sha512-6hY4Kl4HPBvtfS62asS/R22JzNNy8vi/Ssev7x6EobfCp+9QIB2hKvI2EtbdJ0VSQacxVNtqhE/NmF/NZ0gm6g==}
@@ -6041,7 +6041,7 @@ snapshots:
       '@iconify/types': 2.0.0
       vue: 3.5.32(typescript@6.0.2)
 
-  '@internationalized/date@3.12.0':
+  '@internationalized/date@3.12.1':
     dependencies:
       '@swc/helpers': 0.5.20
 
@@ -6528,7 +6528,7 @@ snapshots:
     dependencies:
       '@floating-ui/dom': 1.7.6
       '@iconify/vue': 5.0.0(vue@3.5.32(typescript@6.0.2))
-      '@internationalized/date': 3.12.0
+      '@internationalized/date': 3.12.1
       '@internationalized/number': 3.6.5
       '@nuxt/fonts': 0.14.0(db0@0.3.4)(ioredis@5.10.1)(magicast@0.5.2)(vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1)(yaml@2.8.3))
       '@nuxt/icon': 2.2.1(magicast@0.5.2)(vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1)(yaml@2.8.3))(vue@3.5.32(typescript@6.0.2))
@@ -10729,7 +10729,7 @@ snapshots:
     dependencies:
       '@floating-ui/dom': 1.7.6
       '@floating-ui/vue': 1.1.11(vue@3.5.32(typescript@6.0.2))
-      '@internationalized/date': 3.12.0
+      '@internationalized/date': 3.12.1
       '@internationalized/number': 3.6.5
       '@tanstack/vue-virtual': 3.13.23(vue@3.5.32(typescript@6.0.2))
       '@vueuse/core': 14.2.1(vue@3.5.32(typescript@6.0.2))
