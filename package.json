@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.111",
-    "@iconify-json/simple-icons": "^1.2.84",
+    "@iconify-json/simple-icons": "^1.2.85",
     "@internationalized/date": "^3.12.2",
-    "@nuxt/ui": "^4.8.1",
+    "@nuxt/ui": "^4.8.2",
     "@tanstack/table-core": "^8.21.3",
     "@unovis/ts": "^1.6.5",
     "@unovis/vue": "^1.6.5",
@@ -33,5 +33,5 @@
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.3"
   },
-  "packageManager": "pnpm@11.5.0"
+  "packageManager": "pnpm@11.5.2"
 }
