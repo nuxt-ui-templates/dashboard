@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.114",
-    "@iconify-json/simple-icons": "^1.2.86",
+    "@iconify-json/simple-icons": "^1.2.87",
     "@internationalized/date": "^3.12.2",
     "@nuxt/ui": "^4.9.0",
     "@tanstack/table-core": "^8.21.3",
@@ -24,14 +24,14 @@
     "nuxt": "^4.4.8",
     "scule": "^1.3.0",
     "tailwindcss": "^4.3.1",
-    "vue": "^3.5.38",
+    "vue": "^3.5.39",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.16.0",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.5"
   },
-  "packageManager": "pnpm@11.8.0"
+  "packageManager": "pnpm@11.9.0"
 }
