@@ -1,13 +1,4 @@
 {
-  "extends": [
-    "github>nuxt/renovate-config-nuxt"
-  ],
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "packageRules": [{
-    "matchDepTypes": ["resolutions"],
-    "enabled": false
-  }],
-  "postUpdateOptions": ["pnpmDedupe"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>nuxt/renovate-config-nuxt"]
 }
