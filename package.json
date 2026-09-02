@@ -15,7 +15,7 @@
     "@iconify-json/simple-icons": "^1.2.94",
     "@internationalized/date": "^3.12.3",
     "@nuxt/ui": "^4.11.0",
-    "@tanstack/table-core": "^8.21.3",
+    "@tanstack/table-core": "^9.2.4",
     "@unovis/ts": "^1.6.7",
     "@unovis/vue": "^1.6.7",
     "@vueuse/core": "^14.4.0",
