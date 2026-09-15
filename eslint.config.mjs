@@ -1,6 +1,7 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
 import betterTailwindcss from 'eslint-plugin-better-tailwindcss'
+import { getDefaultAttributes } from 'eslint-plugin-better-tailwindcss/api/defaults'
 
 export default withNuxt(
   {
@@ -9,20 +10,16 @@ export default withNuxt(
       'vue/max-attributes-per-line': ['error', { singleline: 3 }]
     }
   },
+  betterTailwindcss.configs['correctness-error'],
   {
-    files: ['**/*.vue'],
-    plugins: { 'better-tailwindcss': betterTailwindcss },
     settings: {
       'better-tailwindcss': {
         entryPoint: 'app/assets/css/main.css',
         attributes: [
-          ['^(v-bind:|:)?class$', [{ match: 'strings' }, { match: 'objectKeys' }]],
-          ['^(v-bind:|:)?ui$', [{ match: 'objectValues' }]]
+          ...getDefaultAttributes(),
+          ['^v-bind:ui$', [{ match: 'objectValues' }]]
         ]
       }
-    },
-    rules: {
-      ...betterTailwindcss.configs['correctness-error'].rules
     }
   }
 )
