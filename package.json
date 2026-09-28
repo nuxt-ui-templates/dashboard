@@ -11,10 +11,10 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.134",
-    "@iconify-json/simple-icons": "^1.2.96",
+    "@iconify-json/lucide": "^1.2.137",
+    "@iconify-json/simple-icons": "^1.2.97",
     "@internationalized/date": "^3.12.4",
-    "@nuxt/ui": "^4.11.1",
+    "@nuxt/ui": "^4.11.2",
     "@tanstack/table-core": "^8.21.3",
     "@unovis/ts": "^1.7.0",
     "@unovis/vue": "^1.7.0",
@@ -34,5 +34,5 @@
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.11"
   },
-  "packageManager": "pnpm@12.5.1"
+  "packageManager": "pnpm@12.6.0"
 }
