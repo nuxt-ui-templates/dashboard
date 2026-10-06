@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [24]
+        node: [22]
 
     steps:
       - name: Checkout
