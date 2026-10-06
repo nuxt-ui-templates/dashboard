@@ -1,3 +1,4 @@
+import { defineEventHandler } from 'nuxt/server'
 import { sub } from 'date-fns'
 
 const mails = [{
@@ -686,6 +687,6 @@ Emergency: (555) 987-6544`,
   date: sub(new Date(), { months: 2 }).toISOString()
 }]
 
-export default eventHandler(async () => {
+export default defineEventHandler(async () => {
   return mails
 })

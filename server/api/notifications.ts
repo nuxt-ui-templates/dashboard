@@ -1,3 +1,4 @@
+import { defineEventHandler } from 'nuxt/server'
 import { sub } from 'date-fns'
 
 const notifications = [{
@@ -251,6 +252,6 @@ const notifications = [{
   date: sub(new Date(), { days: 22 }).toISOString()
 }]
 
-export default eventHandler(async () => {
+export default defineEventHandler(async () => {
   return notifications
 })
