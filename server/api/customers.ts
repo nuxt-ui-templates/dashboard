@@ -1,3 +1,4 @@
+import { defineEventHandler } from 'nuxt/server'
 import type { User } from '~/types'
 
 const customers: User[] = [{
@@ -182,6 +183,6 @@ const customers: User[] = [{
   location: 'London, UK'
 }]
 
-export default eventHandler(async () => {
+export default defineEventHandler(async () => {
   return customers
 })

@@ -1,3 +1,5 @@
+import { defineEventHandler } from 'nuxt/server'
+
 const members = [{
   name: 'Anthony Fu',
   username: 'antfu',
@@ -55,6 +57,6 @@ const members = [{
   avatar: { src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux' }
 }]
 
-export default eventHandler(async () => {
+export default defineEventHandler(async () => {
   return members
 })
