@@ -22,20 +22,18 @@ const formatDate = (date: Date): string => {
   })[props.period]
 }
 
-const data = ref<DataRecord[]>([])
-
-watch([() => props.period, () => props.range], () => {
+const { data } = await useAsyncData<DataRecord[]>('chart', async () => {
   const dates = ({
     daily: eachDayOfInterval,
     weekly: eachWeekOfInterval,
     monthly: eachMonthOfInterval
   } as Record<Period, typeof eachDayOfInterval>)[props.period](props.range)
 
-  const min = 1000
-  const max = 10000
-
-  data.value = dates.map(date => ({ date: formatDate(date), amount: Math.floor(Math.random() * (max - min + 1)) + min }))
-}, { immediate: true })
+  return dates.map(date => ({ date: formatDate(date), amount: randomInt(1000, 10000) }))
+}, {
+  watch: [() => props.period, () => props.range],
+  default: () => []
+})
 
 const total = computed(() => data.value.reduce((acc: number, { amount }) => acc + amount, 0))
 </script>
