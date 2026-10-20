@@ -64,6 +64,7 @@ const total = computed(() => data.value.reduce((acc: number, { amount }) => acc 
       :x-axis="false"
       :y-axis="false"
       :grid="true"
+      :tooltip="{ portal: true }"
       :format="formatNumber"
       :aspect-ratio="3"
       :initial-width="1152"
