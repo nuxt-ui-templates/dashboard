@@ -29,7 +29,11 @@ const { data } = await useAsyncData<DataRecord[]>('chart', async () => {
     monthly: eachMonthOfInterval
   } as Record<Period, typeof eachDayOfInterval>)[props.period](props.range)
 
-  return dates.map(date => ({ date: formatDate(date), amount: randomInt(1000, 10000) }))
+  // The y axis rounds the highest amount up to its next step, so keeping it just above 7,000 leaves room above the peak
+  const amounts = dates.map(() => randomInt(1000, 7000))
+  amounts[randomInt(0, amounts.length - 1)] = randomInt(7100, 7200)
+
+  return dates.map((date, i) => ({ date: formatDate(date), amount: amounts[i]! }))
 }, {
   watch: [() => props.period, () => props.range],
   default: () => []
