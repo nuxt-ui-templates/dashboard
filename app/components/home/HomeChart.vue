@@ -39,7 +39,7 @@ const total = computed(() => data.value.reduce((acc: number, { amount }) => acc 
 </script>
 
 <template>
-  <UCard :ui="{ root: 'overflow-visible', body: 'px-0! pt-0! pb-3!' }">
+  <UCard :ui="{ root: 'overflow-visible', body: 'p-0! overflow-hidden rounded-b-[inherit]' }">
     <template #header>
       <div>
         <p class="text-xs text-muted uppercase mb-1.5">
@@ -59,10 +59,11 @@ const total = computed(() => data.value.reduce((acc: number, { amount }) => acc 
       :categories="[{ key: 'amount', label: 'Revenue' }]"
       :x-axis="false"
       :y-axis="false"
-      :grid="false"
+      :grid="true"
       :format="formatNumber"
       :aspect-ratio="3"
       :initial-width="1152"
+      class="-my-px"
       aria-label="Revenue"
     />
   </UCard>
