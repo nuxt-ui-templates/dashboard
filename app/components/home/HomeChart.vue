@@ -17,7 +17,7 @@ const formatNumber = new Intl.NumberFormat('en', { style: 'currency', currency: 
 const formatDate = (date: Date): string => {
   return ({
     daily: format(date, 'd MMM'),
-    weekly: format(date, 'd MMM'),
+    weekly: format(date, 'd MMM yyyy'),
     monthly: format(date, 'MMM yyy')
   })[props.period]
 }
