@@ -59,7 +59,8 @@ const total = computed(() => data.value.reduce((acc: number, { amount }) => acc 
       :categories="[{ key: 'amount', label: 'Revenue' }]"
       :y-axis="false"
       :format="formatNumber"
-      :height="384"
+      :aspect-ratio="3"
+      :initial-width="1152"
       aria-label="Revenue"
     />
   </UCard>
