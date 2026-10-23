@@ -94,3 +94,59 @@ export interface CalendarEvent {
     avatar: AvatarProps
   }>
 }
+
+export type TeacherStatus = 'active' | 'on_leave' | 'inactive'
+
+export interface Teacher {
+  id: string
+  name: string
+  email: string
+  avatar: AvatarProps
+  department: string
+  subject: string
+  phone: string
+  status: TeacherStatus
+  rating: number
+  totalStudents: number
+  totalCourses: number
+  experienceYears: number
+  bio: string
+}
+
+export type StudentStatus = 'active' | 'graduated' | 'inactive'
+
+export interface Student {
+  id: string
+  name: string
+  email: string
+  avatar: AvatarProps
+  grade: string
+  major: string
+  enrollmentDate: string
+  status: StudentStatus
+  gpa: number
+  attendanceRate: number
+  coursesCount: number
+}
+
+export type CourseLevel = 'Beginner' | 'Intermediate' | 'Advanced'
+export type CourseStatus = 'published' | 'draft' | 'archived'
+
+export interface Course {
+  id: string
+  code: string
+  title: string
+  description: string
+  instructor: {
+    name: string
+    avatar: AvatarProps
+  }
+  category: string
+  level: CourseLevel
+  duration: string
+  lessonsCount: number
+  studentsCount: number
+  rating: number
+  price: number
+  status: CourseStatus
+}

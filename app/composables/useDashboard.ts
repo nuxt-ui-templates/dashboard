@@ -12,6 +12,10 @@ const _useDashboard = () => {
     'g-f': () => router.push('/forms'),
     'g-t': () => router.push('/table'),
     'g-l': () => router.push('/calendar'),
+    'g-e': () => router.push('/teachers'),
+    'g-d': () => router.push('/students'),
+    'g-u': () => router.push('/courses'),
+    'g-a': () => router.push('/auth/login'),
     'g-s': () => router.push('/settings'),
     'n': () => isNotificationsSlideoverOpen.value = !isNotificationsSlideoverOpen.value
   })
