@@ -58,3 +58,39 @@ export interface Range {
   start: Date
   end: Date
 }
+
+export type OrderStatus = 'completed' | 'processing' | 'pending' | 'cancelled'
+export type OrderPriority = 'high' | 'medium' | 'low'
+
+export interface Order {
+  id: string
+  customer: {
+    name: string
+    email: string
+    avatar: AvatarProps
+  }
+  product: string
+  category: string
+  amount: number
+  status: OrderStatus
+  priority: OrderPriority
+  paymentMethod: string
+  date: string
+}
+
+export type EventCategory = 'meeting' | 'task' | 'reminder' | 'work' | 'personal'
+
+export interface CalendarEvent {
+  id: string
+  title: string
+  description?: string
+  date: string
+  time?: string
+  duration?: string
+  category: EventCategory
+  location?: string
+  attendees?: Array<{
+    name: string
+    avatar: AvatarProps
+  }>
+}

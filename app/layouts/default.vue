@@ -29,6 +29,27 @@ const links = [[{
     open.value = false
   }
 }, {
+  label: 'Forms',
+  icon: 'i-lucide-square-pen',
+  to: '/forms',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Table',
+  icon: 'i-lucide-table-2',
+  to: '/table',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Calendar',
+  icon: 'i-lucide-calendar-days',
+  to: '/calendar',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
   label: 'Settings',
   to: '/settings',
   icon: 'i-lucide-settings',
