@@ -6,7 +6,7 @@ const fileRef = ref<HTMLInputElement>()
 
 const profileSchema = z.object({
   name: z.string().min(2, 'Too short'),
-  email: z.string().email('Invalid email'),
+  email: z.email('Invalid email'),
   username: z.string().min(2, 'Too short'),
   avatar: z.string().optional(),
   bio: z.string().optional()
@@ -56,7 +56,7 @@ function onFileClick() {
   >
     <UPageCard
       title="Profile"
-      description="These informations will be displayed publicly."
+      description="This information will be displayed publicly."
       variant="naked"
       orientation="horizontal"
       class="mb-4"
@@ -107,7 +107,6 @@ function onFileClick() {
       >
         <UInput
           v-model="profile.username"
-          type="username"
           autocomplete="off"
         />
       </UFormField>
