@@ -50,7 +50,7 @@ const notifications = [{
       src: 'https://i.pravatar.cc/128?u=5'
     }
   },
-  body: 'abandonned cart',
+  body: 'abandoned cart',
   date: sub(new Date(), { hours: 7 }).toISOString()
 }, {
   id: 6,
@@ -106,7 +106,7 @@ const notifications = [{
   sender: {
     name: 'Riley Davis'
   },
-  body: 'abandonned cart',
+  body: 'abandoned cart',
   date: sub(new Date(), { days: 7 }).toISOString()
 }, {
   id: 12,
@@ -195,7 +195,7 @@ const notifications = [{
   sender: {
     name: 'Morgan Anderson'
   },
-  body: 'abandonned cart',
+  body: 'abandoned cart',
   date: sub(new Date(), { days: 17 }).toISOString()
 }, {
   id: 22,
@@ -241,7 +241,7 @@ const notifications = [{
       src: 'https://i.pravatar.cc/128?u=9'
     }
   },
-  body: 'abandonned cart',
+  body: 'abandoned cart',
   date: sub(new Date(), { days: 21 }).toISOString()
 }, {
   id: 27,

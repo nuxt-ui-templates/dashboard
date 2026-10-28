@@ -31,7 +31,7 @@ const period = ref<Period>('daily')
         </template>
 
         <template #right>
-          <UTooltip text="Notifications" :shortcuts="['N']">
+          <UTooltip text="Notifications" :kbds="['n']">
             <UButton
               color="neutral"
               variant="ghost"

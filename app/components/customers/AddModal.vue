@@ -4,7 +4,7 @@ import type { FormSubmitEvent } from '@nuxt/ui'
 
 const schema = z.object({
   name: z.string().min(2, 'Too short'),
-  email: z.string().email('Invalid email')
+  email: z.email('Invalid email')
 })
 const open = ref(false)
 
@@ -33,11 +33,11 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         class="space-y-4"
         @submit="onSubmit"
       >
-        <UFormField label="Name" placeholder="John Doe" name="name">
-          <UInput v-model="state.name" class="w-full" />
+        <UFormField label="Name" name="name">
+          <UInput v-model="state.name" placeholder="John Doe" class="w-full" />
         </UFormField>
-        <UFormField label="Email" placeholder="john.doe@example.com" name="email">
-          <UInput v-model="state.email" class="w-full" />
+        <UFormField label="Email" name="email">
+          <UInput v-model="state.email" placeholder="john.doe@example.com" class="w-full" />
         </UFormField>
         <div class="flex justify-end gap-2">
           <UButton
