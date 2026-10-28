@@ -29,10 +29,78 @@ const links = [[{
     open.value = false
   }
 }, {
+  label: 'Forms',
+  icon: 'i-lucide-square-pen',
+  to: '/forms',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Table',
+  icon: 'i-lucide-table-2',
+  to: '/table',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Calendar',
+  icon: 'i-lucide-calendar-days',
+  to: '/calendar',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Teachers',
+  icon: 'i-lucide-graduation-cap',
+  to: '/teachers',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Students',
+  icon: 'i-lucide-backpack',
+  to: '/students',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Courses',
+  icon: 'i-lucide-book-open',
+  to: '/courses',
+  onSelect: () => {
+    open.value = false
+  }
+}, {
+  label: 'Auth',
+  icon: 'i-lucide-lock-keyhole',
+  type: 'trigger',
+  children: [{
+    label: 'Sign In',
+    icon: 'i-lucide-log-in',
+    to: '/auth/login',
+    exact: true,
+    onSelect: () => {
+      open.value = false
+    }
+  }, {
+    label: 'Sign Up',
+    icon: 'i-lucide-user-plus',
+    to: '/auth/register',
+    onSelect: () => {
+      open.value = false
+    }
+  }, {
+    label: 'Forgot Password',
+    icon: 'i-lucide-key-round',
+    to: '/auth/forgot-password',
+    onSelect: () => {
+      open.value = false
+    }
+  }]
+}, {
   label: 'Settings',
   to: '/settings',
   icon: 'i-lucide-settings',
-  defaultOpen: true,
   type: 'trigger',
   children: [{
     label: 'General',
