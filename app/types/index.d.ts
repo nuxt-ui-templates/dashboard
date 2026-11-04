@@ -58,3 +58,95 @@ export interface Range {
   start: Date
   end: Date
 }
+
+export type OrderStatus = 'completed' | 'processing' | 'pending' | 'cancelled'
+export type OrderPriority = 'high' | 'medium' | 'low'
+
+export interface Order {
+  id: string
+  customer: {
+    name: string
+    email: string
+    avatar: AvatarProps
+  }
+  product: string
+  category: string
+  amount: number
+  status: OrderStatus
+  priority: OrderPriority
+  paymentMethod: string
+  date: string
+}
+
+export type EventCategory = 'meeting' | 'task' | 'reminder' | 'work' | 'personal'
+
+export interface CalendarEvent {
+  id: string
+  title: string
+  description?: string
+  date: string
+  time?: string
+  duration?: string
+  category: EventCategory
+  location?: string
+  attendees?: Array<{
+    name: string
+    avatar: AvatarProps
+  }>
+}
+
+export type TeacherStatus = 'active' | 'on_leave' | 'inactive'
+
+export interface Teacher {
+  id: string
+  name: string
+  email: string
+  avatar: AvatarProps
+  department: string
+  subject: string
+  phone: string
+  status: TeacherStatus
+  rating: number
+  totalStudents: number
+  totalCourses: number
+  experienceYears: number
+  bio: string
+}
+
+export type StudentStatus = 'active' | 'graduated' | 'inactive'
+
+export interface Student {
+  id: string
+  name: string
+  email: string
+  avatar: AvatarProps
+  grade: string
+  major: string
+  enrollmentDate: string
+  status: StudentStatus
+  gpa: number
+  attendanceRate: number
+  coursesCount: number
+}
+
+export type CourseLevel = 'Beginner' | 'Intermediate' | 'Advanced'
+export type CourseStatus = 'published' | 'draft' | 'archived'
+
+export interface Course {
+  id: string
+  code: string
+  title: string
+  description: string
+  instructor: {
+    name: string
+    avatar: AvatarProps
+  }
+  category: string
+  level: CourseLevel
+  duration: string
+  lessonsCount: number
+  studentsCount: number
+  rating: number
+  price: number
+  status: CourseStatus
+}
